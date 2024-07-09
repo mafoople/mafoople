@@ -1,0 +1,43 @@
+:root {
+    --gap:4px
+}
+
+body {
+    padding:0;
+    margin:0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header, aside, section {
+    border: 1px solid black
+}
+
+/* LAYOUT */
+
+#wrapper {
+    display:flex;
+    flex-wrap:wrap;
+    margin:0 auto;
+    max-width:1000px
+}
+
+header, aside, main {
+    margin:calc(var(--gap)/2)
+}
+
+header {
+    width: 100%
+}
+
+aside {
+    width:30%
+}
+
+main {
+    flex:1;
+    display:grid;
+    gap:var(--gap)
+}
